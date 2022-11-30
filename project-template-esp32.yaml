@@ -1,9 +1,9 @@
 ---
 substitutions:
-  id: test-project
+  name: test-project
 
 esphome:
-  name: "${id}"
+  name: ${name}
   name_add_mac_suffix: true
 
   project:
