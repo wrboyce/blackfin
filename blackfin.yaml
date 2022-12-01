@@ -1,0 +1,33 @@
+---
+substitutions:
+  name: blackfin-device
+
+esphome:
+  name: ${name}
+  name_add_mac_suffix: true
+
+  project:
+    name: wrboyce.project-blackfin
+    version: "1.0"
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+logger:
+api:
+ota:
+wifi:
+  ap:
+    password: "12345678"
+captive_portal:
+esp32_improv:
+  authorizer: none
+improv_serial:
+
+dashboard_import:
+  package_import_url: github://wrboyce/blackfin/blackfin.yaml@master
+
+status_led:
+  pin: GPIO32

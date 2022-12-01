@@ -1,13 +1,13 @@
 ---
 substitutions:
-  name: test-project
+  name: blackfin-device
 
 esphome:
   name: ${name}
   name_add_mac_suffix: true
 
   project:
-    name: wrboyce.test-project
+    name: wrboyce.project-blackfin
     version: "1.0"
 
 esp32:
@@ -27,7 +27,7 @@ esp32_improv:
 improv_serial:
 
 dashboard_import:
-  package_import_url: github://wrboyce/esphome-test-project/project-template-esp32.yaml@main
+  package_import_url: github://wrboyce/blackfin/blackfin.yaml@master
 
 status_led:
   pin: GPIO32

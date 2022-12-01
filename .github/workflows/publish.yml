@@ -3,11 +3,11 @@ name: Build and Publish ESPHome firmware and website
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
     uses: esphome/workflows/.github/workflows/publish.yml@main
     with:
-      files: project-template-esp32.yaml
-      name: Test Project
+      files: blackfin.yaml,blackfin-factory.yaml
+      name: Project Blackfin

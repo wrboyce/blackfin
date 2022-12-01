@@ -10,10 +10,10 @@ jobs:
     strategy:
       matrix:
         file:
-          - project-template-esp32.yaml
+          - blackfin.yaml
+          - blackfin-factory.yaml
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Build ESPHome firmware to verify configuration
         uses: esphome/build-action@v1.5.0
         with:
