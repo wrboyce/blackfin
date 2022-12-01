@@ -1,5 +1,5 @@
 {
-  "name": "Test Project",
+  "name": "Project Blackfin",
   "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
@@ -8,7 +8,7 @@
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "test-project-esp32/test-project-esp32.bin",
+          "path": "blackfin-device-esp32/blackfin-device-esp32.bin",
           "offset": 0
         }
       ]
